@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hitesh Kumar" />
+    <meta
+      name="description"
+      content="Contact information about Hitesh Blogs"
+    />
+    <title>Hitesh Blogs</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Hitesh Blogs</h1>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="index.html">Blogs</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Contact Me</legend>
+
+                    <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="first name" autocomplete="on" required autofocus>
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="last name" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" title="Enter an 11-digit phone number" id="phone" pattern="[0-9]{4}[0-9]{7}" placeholder="03007243423" required >
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="xyz@gmail.com" required>
+                    </p>
+                    <p>
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" placeholder="Type your message here" cols="30" rows="10"></textarea>
+                    </p>
+                </fieldset>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+                
+            </form>
+            
+            <aside>
+                <h3>Availability</h3>
+                    <dl>
+                        <dt>Monday-Thursday</dt>
+                        <dd><time datetime="08:00">8:00</time>-<time datetime="17:00">5:00</time></dd>
+                        <dt>Friday-Saturday</dt>
+                        <dd><time datetime="10:00">10:00</time>-<time datetime="17:00">5:00</time></dd>
+                    </dl>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hitesh Kumar</p>
+    </footer>
+</body>
+</html>
